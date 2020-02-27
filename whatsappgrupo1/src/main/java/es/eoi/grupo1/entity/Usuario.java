@@ -31,14 +31,17 @@ public class Usuario {
 	String telefono;
 	@Column(name = "NOMBRE")
 	String nombre;
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "usuario")
-	List<Mensaje> mensaje;
-
-	public Usuario(String telefono, String nombre, List<Mensaje> mensaje) {
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "envia")
+	List<Mensaje> salida;
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "recibe")
+	List<Mensaje> entrada;
+	public Usuario(String telefono, String nombre, List<Mensaje> salida, List<Mensaje> entrada) {
 		super();
 		this.telefono = telefono;
 		this.nombre = nombre;
-		this.mensaje = mensaje;
+		this.salida = salida;
+		this.entrada = entrada;
 	}
+
 
 }
