@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 
 import es.eoi.grupo1.entity.Usuario;
 
+
 @Controller
 public interface UsuarioRepository extends JpaRepository<Usuario, String> {
 

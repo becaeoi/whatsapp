@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 
 import es.eoi.grupo1.entity.Mensaje;
 
+
 @Controller
 public interface MensajeRepository extends JpaRepository<Mensaje, Integer> {
 
