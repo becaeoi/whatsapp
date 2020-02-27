@@ -17,7 +17,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 	
 	
 	@Override
-	public Usuario findUsario (String id) {
+	public Usuario findUsarioById (int id) {
 		return repository.findById(id).get();
 	}
 	

@@ -6,7 +6,7 @@ import es.eoi.grupo1.entity.Usuario;
 
 public interface UsuarioService {
 
-	Usuario findUsario(String id);
+	Usuario findUsarioById(int id);
 
 	Usuario createUsuario(Usuario usuario);
 

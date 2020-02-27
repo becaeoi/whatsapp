@@ -7,6 +7,6 @@ import es.eoi.grupo1.entity.Usuario;
 
 
 @Controller
-public interface UsuarioRepository extends JpaRepository<Usuario, String> {
+public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
 
 }
