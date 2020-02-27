@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
 import es.eoi.grupo1.entity.Usuario;
 import es.eoi.grupo1.repository.UsuarioRepository;
 
