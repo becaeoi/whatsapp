@@ -40,6 +40,7 @@ public class UsuarioController {
 		return service.updateUsuario(usuario);
 	}
 	
+	@RequestMapping(method = RequestMethod.GET, value = "/all")
 	public List<Usuario> findAllUsuarios() {
 		return service.findAllUsuario();
 	}
