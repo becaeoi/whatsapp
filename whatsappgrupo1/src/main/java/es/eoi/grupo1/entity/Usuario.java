@@ -33,4 +33,12 @@ public class Usuario {
 	String nombre;
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "usuario")
 	List<Mensaje> mensaje;
+
+	public Usuario(String telefono, String nombre, List<Mensaje> mensaje) {
+		super();
+		this.telefono = telefono;
+		this.nombre = nombre;
+		this.mensaje = mensaje;
+	}
+
 }
