@@ -1,5 +1,5 @@
 package es.eoi.grupo1.controller;
 
-public class UsuarioController {
+public class UsuarioControllerImp {
 
 }
