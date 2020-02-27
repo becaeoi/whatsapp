@@ -1,7 +1,7 @@
+
 package es.eoi.grupo1.dto;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Setter
@@ -19,3 +19,5 @@ public class MensajeDto {
 	boolean estado;
 
 }
+
+

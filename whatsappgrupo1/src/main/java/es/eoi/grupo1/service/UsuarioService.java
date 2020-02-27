@@ -1,3 +1,4 @@
+
 package es.eoi.grupo1.service;
 
 import java.util.List;
@@ -15,5 +16,6 @@ public interface UsuarioService {
 	Usuario updateUsuario(Usuario usuario);
 
 	List<Usuario> findAllUsuario();
+
 
 }

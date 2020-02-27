@@ -15,7 +15,7 @@ import es.eoi.grupo1.service.UsuarioService;
 
 @RestController
 @RequestMapping(value = "/Usuario")
-public class UsuarioController {
+public class UsuarioControllerImpl {
 	
 	@Autowired
 	private UsuarioService service;
