@@ -3,6 +3,7 @@ package com.whatsapp.server.controller;
 import com.whatsapp.server.service.MessageService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -13,7 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author Manulaiko <manulaiko@gmail.com>
  */
-@RestController("/message")
+@RestController
+@RequestMapping("/message")
 @RequiredArgsConstructor
 public class MessageController {
     private final MessageService messageService;
