@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c4f06c05-c226-4d8f-89ee-c039dc488dc8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1YRRYs8XiX1BtoHnvfW9b1z9mKC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.whatsapp.server.ServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4f06c05-c226-4d8f-89ee-c039dc488dc8" name="Default Changelist" comment="" />
+      <created>1582903470035</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582903470035</updated>
+      <workItem from="1582903471885" duration="594000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="279" y="16" key="#Plugins" timestamp="1582903646021">
+      <screen x="0" y="0" width="1366" height="741" />
+    </state>
+    <state x="279" y="16" key="#Plugins/0.0.1366.741@0.0.1366.741" timestamp="1582903646021" />
+    <state x="59" y="0" key="new project wizard" timestamp="1582903567827">
+      <screen x="0" y="0" width="1366" height="741" />
+    </state>
+    <state x="59" y="0" key="new project wizard/0.0.1366.741@0.0.1366.741" timestamp="1582903567827" />
+    <state x="346" y="61" width="672" height="678" key="search.everywhere.popup" timestamp="1582903635971">
+      <screen x="0" y="0" width="1366" height="741" />
+    </state>
+    <state x="346" y="61" width="672" height="678" key="search.everywhere.popup/0.0.1366.741@0.0.1366.741" timestamp="1582903635971" />
+  </component>
+</project>
