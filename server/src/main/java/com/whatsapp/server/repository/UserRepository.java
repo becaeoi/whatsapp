@@ -14,4 +14,12 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
+    /**
+     * Returns the user by its phone number.
+     *
+     * @param phone Phone number.
+     *
+     * @return User with given phone number.
+     */
+    User findByPhone(String phone);
 }

@@ -29,7 +29,12 @@ public class UserService {
      * @return Registered user.
      */
     public User register(String name, String phone) {
-        User user = new User();
+        User user = repository.findByPhone(phone);
+        if (user != null) {
+            return user;
+        }
+
+        user = new User();
         user.setId(UUID.randomUUID().getMostSignificantBits() & Long.MAX_VALUE);
         user.setName(name);
         user.setPhone(phone);
