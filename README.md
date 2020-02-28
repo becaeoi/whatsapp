@@ -1,2 +1,5 @@
 # whatsapp
-#Jorge Nalón Uclés
+
+Jorge Navalon Ucles
+Aaron Martin Lozano
+
