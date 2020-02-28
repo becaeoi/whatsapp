@@ -4,6 +4,9 @@ import com.whatsapp.server.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+import java.util.UUID;
+
 /**
  * User repository.
  * ================
@@ -13,7 +16,7 @@ import org.springframework.stereotype.Repository;
  * @author Manulaiko <manulaiko@gmail.com>
  */
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, UUID> {
     /**
      * Returns the user by its phone number.
      *
@@ -21,5 +24,5 @@ public interface UserRepository extends JpaRepository<User, Long> {
      *
      * @return User with given phone number.
      */
-    User findByPhone(String phone);
+    Optional<User> findByPhone(String phone);
 }

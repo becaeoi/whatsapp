@@ -1,9 +1,11 @@
 package com.whatsapp.server.entity;
 
 import lombok.Data;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * User entity.
@@ -17,7 +19,10 @@ import java.util.List;
 @Data
 public class User {
     @Id
-    private long id;
+    @GeneratedValue(generator = "uuid2")
+    @GenericGenerator(name = "uuid2", strategy = "uuid2")
+    @Column(columnDefinition = "BINARY(16)")
+    private UUID id;
 
     @Column
     private String phone;

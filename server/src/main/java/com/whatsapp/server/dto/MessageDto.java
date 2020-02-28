@@ -12,7 +12,7 @@ import lombok.Data;
  */
 @Data
 public class MessageDto {
-    private long id;
+    private String id;
     private String text;
     private int status;
     private long from_id;

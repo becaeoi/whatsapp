@@ -1,8 +1,10 @@
 package com.whatsapp.server.entity;
 
 import lombok.Data;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.UUID;
 
 /**
  * Message entity.
@@ -16,7 +18,10 @@ import javax.persistence.*;
 @Data
 public class Message {
     @Id
-    private long id;
+    @GeneratedValue(generator = "uuid2")
+    @GenericGenerator(name = "uuid2", strategy = "uuid2")
+    @Column(columnDefinition = "BINARY(16)")
+    private UUID id;
 
     @Column(columnDefinition = "TEXT")
     private String text;
