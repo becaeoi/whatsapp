@@ -21,6 +21,13 @@ public class UserController {
     private final UserService userService;
     private final ModelMapper mapper;
 
+    /**
+     * Registers an user.
+     *
+     * @param user User to register.
+     *
+     * @return Registered user.
+     */
     @PostMapping("register")
     public UserDto register(@RequestBody UserDto user) {
         return mapper.map(
@@ -29,6 +36,13 @@ public class UserController {
         );
     }
 
+    /**
+     * Returns an user by its phone number.
+     *
+     * @param phone User phone number.
+     *
+     * @return User.
+     */
     @GetMapping("byPhone/{phone}")
     public UserDto byPhone(@PathVariable("phone") String phone) {
         return mapper.map(
@@ -38,6 +52,13 @@ public class UserController {
         );
     }
 
+    /**
+     * Returns an user by its id.
+     *
+     * @param id User id.
+     *
+     * @return User.
+     */
     @GetMapping("byId/{id}")
     public UserDto byId(@PathVariable("id") String id) {
         System.out.println(id);
