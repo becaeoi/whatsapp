@@ -4,8 +4,9 @@ import com.whatsapp.server.entity.Message;
 import com.whatsapp.server.entity.MessageStatus;
 import com.whatsapp.server.repository.MessageRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * Message service.
@@ -38,5 +39,18 @@ public class MessageService {
         message.setStatus(MessageStatus.SENT);
 
         return repository.save(message);
+    }
+
+    /**
+     * Returns a user inbox.
+     *
+     * @param id User id.
+     *
+     * @return User received messages.
+     */
+    public List<Message> inbox(String id) {
+        return repository.findAllByTo(
+                userService.findById(id).orElseThrow(RuntimeException::new)
+        );
     }
 }
