@@ -4,10 +4,7 @@ import com.whatsapp.server.dto.UserDto;
 import com.whatsapp.server.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * User controller.
@@ -28,6 +25,26 @@ public class UserController {
     public UserDto register(@RequestBody UserDto user) {
         return mapper.map(
                 userService.register(user.getName(), user.getPhone()),
+                UserDto.class
+        );
+    }
+
+    @GetMapping("byPhone/{phone}")
+    public UserDto byPhone(@PathVariable("phone") String phone) {
+        return mapper.map(
+                userService.findByPhone(phone)
+                           .orElseThrow(RuntimeException::new),
+                UserDto.class
+        );
+    }
+
+    @GetMapping("byId/{id}")
+    public UserDto byId(@PathVariable("id") String id) {
+        System.out.println(id);
+
+        return mapper.map(
+                userService.findById(id)
+                           .orElseThrow(RuntimeException::new),
                 UserDto.class
         );
     }
