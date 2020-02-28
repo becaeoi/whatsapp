@@ -1,5 +1,9 @@
 package com.whatsapp.server.service;
 
+import com.whatsapp.server.entity.Message;
+import com.whatsapp.server.entity.MessageStatus;
+import com.whatsapp.server.repository.MessageRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +16,27 @@ import org.springframework.stereotype.Service;
  * @author Manulaiko <manulaiko@gmail.com>
  */
 @Service
+@RequiredArgsConstructor
 public class MessageService {
-    @Autowired
-    private MessageService repository;
+    private final MessageRepository repository;
+    private final UserService       userService;
+
+    /**
+     * Sends the given message to the given user.
+     *
+     * @param from_id Author ID.
+     * @param to_id   Receiver ID.
+     * @param text    Message content.
+     *
+     * @return Created message.
+     */
+    public Message send(String from_id, String to_id, String text) {
+        Message message = new Message();
+        message.setFrom(userService.findById(from_id).orElseThrow(RuntimeException::new));
+        message.setTo(userService.findById(to_id).orElseThrow(RuntimeException::new));
+        message.setText(text);
+        message.setStatus(MessageStatus.SENT);
+
+        return repository.save(message);
+    }
 }

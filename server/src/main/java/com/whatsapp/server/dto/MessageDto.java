@@ -15,6 +15,6 @@ public class MessageDto {
     private String id;
     private String text;
     private int status;
-    private long from_id;
-    private long to_id;
+    private String from_id;
+    private String to_id;
 }
