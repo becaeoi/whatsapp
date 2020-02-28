@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4f06c05-c226-4d8f-89ee-c039dc488dc8" name="Default Changelist" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/whatsapp/server/Config.java" afterDir="false" />
+    <list default="true" id="c4f06c05-c226-4d8f-89ee-c039dc488dc8" name="Default Changelist" comment="Configure application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/whatsapp/server/ServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/whatsapp/server/ServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +31,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -41,14 +41,33 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YRRYs8XiX1BtoHnvfW9b1z9mKC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.whatsapp.server.entity" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -66,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582903470035</updated>
-      <workItem from="1582903471885" duration="1148000" />
+      <workItem from="1582903471885" duration="2806000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1582904214157</created>
@@ -75,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582904214157</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Configure application">
+      <created>1582904687614</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582904687614</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,20 +120,57 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Configure application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configure application" />
   </component>
   <component name="WindowStateProjectService">
     <state x="279" y="16" key="#Plugins" timestamp="1582903646021">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
     <state x="279" y="16" key="#Plugins/0.0.1366.741@0.0.1366.741" timestamp="1582903646021" />
+    <state width="1320" height="585" key="GridCell.Tab.0.bottom" timestamp="1582906408358">
+      <screen x="0" y="0" width="1366" height="741" />
+    </state>
+    <state width="1320" height="585" key="GridCell.Tab.0.bottom/0.0.1366.741@0.0.1366.741" timestamp="1582906408358" />
+    <state width="1320" height="585" key="GridCell.Tab.0.center" timestamp="1582906408356">
+      <screen x="0" y="0" width="1366" height="741" />
+    </state>
+    <state width="1320" height="585" key="GridCell.Tab.0.center/0.0.1366.741@0.0.1366.741" timestamp="1582906408356" />
+    <state width="1320" height="585" key="GridCell.Tab.0.left" timestamp="1582906408354">
+      <screen x="0" y="0" width="1366" height="741" />
+    </state>
+    <state width="1320" height="585" key="GridCell.Tab.0.left/0.0.1366.741@0.0.1366.741" timestamp="1582906408354" />
+    <state width="1320" height="585" key="GridCell.Tab.0.right" timestamp="1582906408357">
+      <screen x="0" y="0" width="1366" height="741" />
+    </state>
+    <state width="1320" height="585" key="GridCell.Tab.0.right/0.0.1366.741@0.0.1366.741" timestamp="1582906408357" />
+    <state width="1320" height="585" key="GridCell.Tab.1.bottom" timestamp="1582906408363">
+      <screen x="0" y="0" width="1366" height="741" />
+    </state>
+    <state width="1320" height="585" key="GridCell.Tab.1.bottom/0.0.1366.741@0.0.1366.741" timestamp="1582906408363" />
+    <state width="1320" height="585" key="GridCell.Tab.1.center" timestamp="1582906408361">
+      <screen x="0" y="0" width="1366" height="741" />
+    </state>
+    <state width="1320" height="585" key="GridCell.Tab.1.center/0.0.1366.741@0.0.1366.741" timestamp="1582906408361" />
+    <state width="1320" height="585" key="GridCell.Tab.1.left" timestamp="1582906408360">
+      <screen x="0" y="0" width="1366" height="741" />
+    </state>
+    <state width="1320" height="585" key="GridCell.Tab.1.left/0.0.1366.741@0.0.1366.741" timestamp="1582906408360" />
+    <state width="1320" height="585" key="GridCell.Tab.1.right" timestamp="1582906408362">
+      <screen x="0" y="0" width="1366" height="741" />
+    </state>
+    <state width="1320" height="585" key="GridCell.Tab.1.right/0.0.1366.741@0.0.1366.741" timestamp="1582906408362" />
+    <state x="229" y="94" width="907" height="646" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1582905188309">
+      <screen x="0" y="0" width="1366" height="741" />
+    </state>
+    <state x="229" y="94" width="907" height="646" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.741@0.0.1366.741" timestamp="1582905188309" />
     <state x="59" y="0" key="new project wizard" timestamp="1582903567827">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
     <state x="59" y="0" key="new project wizard/0.0.1366.741@0.0.1366.741" timestamp="1582903567827" />
-    <state x="346" y="61" width="672" height="678" key="search.everywhere.popup" timestamp="1582903635971">
+    <state x="346" y="61" width="672" height="678" key="search.everywhere.popup" timestamp="1582905809374">
       <screen x="0" y="0" width="1366" height="741" />
     </state>
-    <state x="346" y="61" width="672" height="678" key="search.everywhere.popup/0.0.1366.741@0.0.1366.741" timestamp="1582903635971" />
+    <state x="346" y="61" width="672" height="678" key="search.everywhere.popup/0.0.1366.741@0.0.1366.741" timestamp="1582905809374" />
   </component>
 </project>
