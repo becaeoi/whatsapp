@@ -14,7 +14,7 @@ import lombok.Data;
 public class MessageDto {
     private String id;
     private String text;
-    private int status;
+    private String status;
     private String from_id;
     private String to_id;
 }
